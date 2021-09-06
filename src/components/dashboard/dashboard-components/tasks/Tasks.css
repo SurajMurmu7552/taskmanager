@@ -1,0 +1,208 @@
+.task__nav {
+  width: 95%;
+  margin: 0 auto;
+}
+.task__nav__items {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+.task__nav__item {
+  width: 100%;
+  height: 56px;
+  text-align: center;
+  padding: 10px 0 20px 0;
+  cursor: default;
+}
+.nav__focus {
+  border-bottom: 2px solid rgb(67, 196, 228);
+  color: rgb(67, 196, 228);
+}
+
+/* styles for Today.js and Upcoming.js */
+
+.task__container {
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.task {
+  position: relative;
+  flex: 0.5;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  padding-bottom: 20px;
+}
+
+.task__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+.task__title {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 30px;
+}
+
+.task__items {
+  list-style: none;
+}
+
+.task__item {
+  padding: 8px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.task__value {
+  display: flex;
+  align-items: center;
+}
+.task__value input[type="checkbox"] {
+  margin: 4px 6px 0 0;
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+}
+
+.task__btns {
+  display: flex;
+  position: relative;
+}
+.status__btn {
+  font-size: 12px;
+  padding: 1px 10px;
+  margin-right: 6px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.status__btn:hover {
+  transform: scale(1.04);
+}
+
+.status__more {
+  position: absolute;
+  list-style: none;
+  display: flex;
+  left: -230px;
+  top: -2px;
+  background-color: #fff;
+  padding: 2px 4px;
+  transform: scaleX(100%);
+  transform-origin: right;
+  transition: 0.1s ease-in-out;
+}
+.more__btn {
+  margin: 0;
+  padding: 0 3px;
+  cursor: default;
+  width: max-content;
+}
+.more__btn:hover {
+  transform: scale(1.05);
+}
+
+.toggle {
+  transform: scaleX(0);
+}
+
+.del__btn {
+  text-align: center;
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+  z-index: 10;
+  cursor: pointer;
+}
+.del__btn > svg {
+  pointer-events: none;
+}
+.del__btn:hover {
+  transform: scale(1.1);
+}
+
+/* adding task style "task__add"*/
+.add__icon {
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  padding: 5px 6px;
+  border-radius: 15px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.toggle__add {
+  transform: translateX(150px);
+  transform-origin: right;
+  margin: 0px 6px;
+}
+
+.add__icon:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.add__icon:hover .toggle__add {
+  transform: translateX(0px);
+  transition: 0.14s all ease-in-out;
+}
+.add__icon > svg {
+  pointer-events: none;
+}
+
+.popup-content {
+  padding: 0;
+  border: none;
+  border-radius: 2px;
+}
+
+.task__add {
+  width: 80%;
+  height: 160px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 100;
+}
+.add__header {
+  width: 80%;
+  padding-bottom: 8px;
+  font-size: 18px;
+}
+
+.add__item {
+  width: 100%;
+  padding-bottom: 10px;
+  display: flex;
+  align-items: baseline;
+}
+.add__item label {
+  margin-right: 10px;
+}
+.add__item input[type="text"] {
+  height: 30px;
+  width: 100%;
+}
+.add__btn {
+  margin: 6px 0;
+  margin-right: 10%;
+}
+.add__btn button {
+  margin-right: 10px;
+  width: 60px;
+  height: 30px;
+  color: #fff;
+  border: none;
+  border-radius: 2px;
+}
+.add__btn button:nth-child(1) {
+  background-color: rgba(0, 0, 255, 0.8);
+}
+.add__btn button:nth-child(2) {
+  background-color: rgba(255, 0, 0, 0.8);
+}

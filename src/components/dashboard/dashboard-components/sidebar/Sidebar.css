@@ -1,0 +1,87 @@
+.sidebar {
+  position: relative;
+  flex: 0.15;
+  height: 100%;
+  padding: 115px 0 0 60px;
+}
+
+.sidebar__items {
+  list-style: none;
+}
+.sidebar__item {
+  position: relative;
+  margin-bottom: 20px;
+  height: 30px;
+  display: flex;
+  align-items: baseline;
+  transition: all 0.1s ease;
+  cursor: default;
+}
+.sidebar__item > svg {
+  transform: translateY(5px);
+}
+.sidebar__link {
+  text-decoration: none;
+  color: #333;
+}
+.sidebar__item:hover {
+  transform: translateX(4px);
+}
+/* .sidebar__icon {
+  padding: 3px;
+} */
+.sidebar__item span {
+  position: absolute;
+}
+
+/* profile style */
+.profile {
+  position: absolute;
+  top: 0;
+  width: 22px;
+  height: 22px;
+  top: 20px;
+  left: 20px;
+  transition: 0.3s all ease;
+  border-radius: 50%;
+  border: 1px solid rgb(148, 148, 255);
+}
+
+.profile__focus {
+  border-radius: 0%;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.profile__icons {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: left;
+}
+.profile__icon {
+  position: absolute;
+  background-color: rgb(148, 148, 255);
+  height: 22px;
+  width: 22px;
+  text-align: center;
+  margin: auto 0;
+  border-radius: 50%;
+  cursor: default;
+  text-transform: capitalize;
+}
+
+.profile__close {
+  position: absolute;
+  right: 20px;
+  top: 30px;
+  cursor: default;
+}
+.profile__toggle {
+  display: none;
+}
+.profile__item {
+  padding-left: 20px;
+}

@@ -1,0 +1,17 @@
+.dashboard {
+  display: flex;
+  align-items: stretch;
+  height: 100%;
+
+  overflow-y: hidden;
+}
+.tasks {
+  flex: 0.85;
+  height: 100%;
+  padding-top: 40px;
+  border-left: 1px solid rgba(0, 0, 0, 0.2);
+  overflow-y: scroll;
+}
+.tasks::-webkit-scrollbar {
+  width: 0;
+}
