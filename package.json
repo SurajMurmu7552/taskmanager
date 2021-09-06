@@ -9,6 +9,7 @@
     "@testing-library/user-event": "^12.8.3",
     "axios": "^0.21.4",
     "bcrypt": "^5.0.1",
+    "concurrently": "^6.2.1",
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "mongoose": "^6.0.4",
@@ -25,7 +26,9 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
+    "server": "node backend/server.js",
     "start": "react-scripts start",
+    "dev": "concurrently \"npm start\" \"npm run server\"",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
